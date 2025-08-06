@@ -60,7 +60,7 @@ header {
     font-size: 1.2rem;
     color: white;
     border: 2px solid white;
-    /* padding: 5px; */
+    padding: 5px;
     border-radius: 50%;
     width: 30px;
     height: 30px;
@@ -128,7 +128,8 @@ section {
     align-items: center;
     overflow-y: scroll;
     gap: 20px;
-    height: calc(100vh - 50px - 30px - 50px);
+    height: calc(100vh - 50px - 30px - 155px);
+    
 }
 
 .noresult {
@@ -140,3 +141,14 @@ section {
 }
 
 /* Implement your styling here */
+
+.moviePoster {
+    border: 1px solid transparent;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.8);
+    transition: 0.3s;
+}
+
+.moviePoster:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.8);
+}
