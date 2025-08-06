@@ -142,13 +142,53 @@ section {
 
 /* Implement your styling here */
 
+#movieCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 2rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+    border: 1px solid black;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.8);
+    transition: 0.3s;
+    width: 200px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.8);
+}
+
+.cardTitle {
+    color: black;
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.cardPosterDiv {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
 .moviePoster {
     border: 1px solid transparent;
     border-radius: 25px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.8);
-    transition: 0.3s;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
-.moviePoster:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.8);
-}

@@ -9,7 +9,7 @@
  * 7.) There are 3 task in this that you have to complete. Discuss with your instructor to understand the task.
  */
 
-const myApiKey = "6ec565d5"; // <<-- ADD YOUR API KEY HERE. DELETE THIS KEY before uploading your code on Github or Brightspace, 
+const myApiKey = ""; // <<-- ADD YOUR API KEY HERE. DELETE THIS KEY before uploading your code on Github or Brightspace, 
 
 const BASE_URL = "http://www.omdbapi.com";
 
@@ -111,7 +111,7 @@ async function getMovies(movieTitle) {
             results.forEach(result => {
                 if(result.status === "fulfilled" && result.value != null) {
                     const movieObj = result.value;
-                    movieObj.Title = movieObj.Title.length > 40 ? `${movieObj.Title.substring(0,40)}...` : movieObj.Title;
+                    movieObj.Title = movieObj.Title.length > 20 ? `${movieObj.Title.substring(0,20)}...` : movieObj.Title;
                     filteredMovies.push(movieObj);
                 }
             })
